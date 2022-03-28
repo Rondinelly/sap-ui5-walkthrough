@@ -112,7 +112,7 @@
                 },
                 {
                     "pattern": "detail",
-                    "name": "details",
+                    "name": "detail",
                     "target": "detail"
                 }
             ],
