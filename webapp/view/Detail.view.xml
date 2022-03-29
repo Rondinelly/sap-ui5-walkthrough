@@ -25,7 +25,7 @@
                        intro="{invoice>ShipperName}"
                        title="{invoice>ProductName}">
                   <attributes>
-                        <ObjectAttribute title="{i18>quantityTitle}"
+                        <ObjectAttribute title="{i18n>quantityTitle}"
                                          text="{invoice>Quantity}"/>
                         <ObjectAttribute title="{i18n>dateTitle}"
                                          text="{
@@ -34,12 +34,15 @@
                                                formatOptions: {
                                                      style: 'long',
                                                      source: {
-                                                           pattern: 'yyyy'-MM=ddTHH:mm:ss
+                                                           pattern: 'yyyy-MM-ddTHH:mm:ss'
                                                      }
                                                }
                                          }"/>
                   </attributes>
             </ObjectHeader>
+            <Panel headerText="{18n>ratingTitle}"
+                   accessibleRole="Region">
                  <wt:ProductRating id="rating" class="sapUiSmallMarginBeginEnd" change=".onRatingChange"/>
+            </Panel>
           </Page>
 </mvc:View>
